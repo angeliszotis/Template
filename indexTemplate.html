@@ -1,0 +1,22 @@
+<template data-template="post">
+    <div data-checksum="2333333" >
+        <p>{{title}}</p>
+        <p>My name is {{author}}</p>
+        {{contains}}
+    </div>
+</template>
+
+<template data-template="postPart">
+    <p data-checksum="2333333" >
+        <span>{{paragraph}}</span>
+        {{contains}}
+    </p>
+</template>
+
+<template data-template="postImage">
+    <img data-checksum="2333333" src="{{imageSource}}">
+</template>
+
+<template data-template="clickable">
+    <p class="clickable" data-target="{{target}}" data-checksum="2333333">{{anchorHolder}}</p>
+</template>
